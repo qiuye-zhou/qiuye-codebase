@@ -1,8 +1,8 @@
 # vue-manage-bil
 
+使用Vuecli创建的项目
+
 技术栈: Vue2，VueRouter，Vuex，Element-ui，Echart，mock，axios
-
-
 
 [项目学习参考地址](https://www.bilibili.com/video/BV1QU4y1E7qo?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click)
 
