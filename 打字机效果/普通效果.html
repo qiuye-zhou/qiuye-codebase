@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打字效果</title>
+    <style>
+        :root {
+            font-size: 20px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-family: monospace;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 0.2ch;
+            margin: 0.2ch;
+            height: 2ch;
+            background-color: #000;
+            border-radius: 10%;
+            right: -0.6ch;
+            /* animation: 1.1s cursor steps(2, jump-none) infinite; */
+        }
+
+        h1.ended::after {
+            animation: 1.1s cursor steps(2, jump-none) infinite;
+        }
+
+        @keyframes cursor {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 span {
+            -o-animation-delay: 10s;
+            display: inline-block;
+            overflow: hidden;
+            width: 0ch;
+            animation: 0.1s text-in ease-in-out forwards;
+            /* animation: 0.1s text-out ease-in-out forwards; */
+            animation-delay: var(--delay);
+        }
+
+        @keyframes text-in {
+            from {
+                width: 0ch;
+            }
+
+            to {
+                width: 2ch;
+            }
+        }
+
+        /* @keyframes text-out {
+            from {
+                width: 2ch;
+            }
+
+            to {
+                width: 0ch;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>答非所问，便是答案—秋叶</h1>
+</body>
+<script>
+    const h1 = document.querySelector('h1');
+    h1.innerHTML = h1.textContent.replace(/\S/g, "<span>$&</span>");
+
+    let delay = 0;
+    document.querySelectorAll("span").forEach((span, index) => {
+        delay += 0.1;
+        if (index === 6) delay += 0.2;
+        span.style.setProperty(`--delay`, `${delay}s`)
+    })
+    h1.addEventListener('animation', (ele) => {
+        if (ele.target === document.querySelector('h1 span:last-child')) {
+            h1.classList.add('edned')
+        }
+    })
+</script>
+
+</html>
