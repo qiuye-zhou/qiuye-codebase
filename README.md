@@ -2,4 +2,7 @@
 
 qiuye的小仓库
 
-💪 努力成为更好的程序员吧！
+正在学习前后端技术的萌新
+
+# License
+MIT LICENSE
