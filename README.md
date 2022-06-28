@@ -2,7 +2,7 @@
 
 qiuye的小仓库
 
-正在学习前后端技术的萌新
+用于存放看视频学习跟着做的一些项目
 
 # License
 MIT LICENSE
