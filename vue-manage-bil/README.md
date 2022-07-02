@@ -12,7 +12,7 @@
 
 
 
-使用了Element-ui，Echart封装了可以复用的组件
+使用了Element-ui，Echart，简单封装了可以复用的组件
 
 
 
