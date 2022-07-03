@@ -1,7 +1,9 @@
 # vue-manage-bil
 
 
-使用Vuecli创建的项目
+项目描述：
+使用vuecli搭建的涵盖了大多数后台管理系统的常用功能的项目。实现了用户登入、菜单权限管理、用户列表等的增删改查功能、通过Element-ui和Echart做了面包屑、tag等功能以及通过折线图、饼状图等实现数据可视化等功能
+
 
 
 技术栈: Vue2，VueRouter，Vuex，Element-ui，Echart，mock，axios
