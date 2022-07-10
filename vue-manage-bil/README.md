@@ -6,12 +6,10 @@
 
 
 
-技术栈: Vue2，VueRouter，Vuex，Element-ui，Echart，less，mock，axios
-
-
-[项目学习参考地址](https://www.bilibili.com/video/BV1QU4y1E7qo?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click)
-(参考视频做会遇到很多的错误修，不过总体来说还行)
-
+技术栈：        
+-	Vue2、VueRouter、Vuex
+-	Element-ui、Echart、Less
+-	mock、axios
 
 
 技术亮点：
@@ -21,7 +19,8 @@
 -	简单封装了可以复用的组件，减少代码重复编写
 
 
-
+[项目学习参考地址](https://www.bilibili.com/video/BV1QU4y1E7qo?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click)
+(参考视频做会遇到很多的错误修，不过总体来说还行)
 
 ### 先安装依赖
 ```
