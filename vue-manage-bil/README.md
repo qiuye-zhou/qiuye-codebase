@@ -6,7 +6,7 @@
 
 
 
-技术栈: Vue2，VueRouter，Vuex，Element-ui，Echart，mock，axios
+技术栈: Vue2，VueRouter，Vuex，Element-ui，Echart，less，mock，axios
 
 
 [项目学习参考地址](https://www.bilibili.com/video/BV1QU4y1E7qo?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click)
@@ -14,15 +14,12 @@
 
 
 
-使用了Element-ui，Echart，简单封装了可以复用的组件
+技术亮点：
+-	vuex存储token，使用路由守卫来控制登入后才能进入首页。
+-	登入后前端获得mock模拟的关于菜单路由的数据，以此来动态添加路由做到菜单权限管理
+-	简单的二次封装了axios，简化了数据请求，更方便管理接口请求
+-	简单封装了可以复用的组件，减少代码重复编写
 
-
-
-通过mock模拟后端数据
-
-
-
-二次封装了axios请求
 
 
 
@@ -41,7 +38,7 @@ yarn serve || npm run serve
 
 
 
-### 两个账户模拟不同用户的界面
+### mock模拟数据的两个账户模拟不同用户的界面
 
 |      | 账户 | 密码 |
 | :--------: | :--: | :--: |
