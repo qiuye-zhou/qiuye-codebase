@@ -1,0 +1,36 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <view class="hear-search">
+    <view class="hear-btn">搜索</view>
+  </view>
+  <view class="banner">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(204,204,204)" indicator-active-color="rgba(255,255,255)" circular="true">
+      <block wx:for="{{background}}" wx:key="name">
+        <swiper-item>
+          <image mode="widthFix" class="swoperimg" src="{{item.image_src}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="backicon">
+    <block wx:for="{{backicon}}" wx:key="name">
+      <image wx:if="{{item.open_type=='switchTab'}}" mode="widthFix" class="icon" src="{{item.image_src}}"
+      bindtap="atabr"></image>
+      <image wx:else="{{item.open_type!='switchTab'}}" mode="widthFix" class="icon" src="{{item.image_src}}"></image>
+    </block>
+  </view>
+  <view class="cont" wx:for="{{homebot}}" wx:key="name">
+    <image class="conttop" src="{{item.floor_title.image_src}}"></image>
+    <view class="contflex">
+      <view class="flexleft">
+        <image class="leftimg" bindtap="wxNavAction" data-src="{{item.product_list[0].navigator_url}}" style="width: {{item.product_list[0].image_width}}rpx;" src="{{item.product_list[0].image_src}}"></image>
+      </view>
+      <view class="flexright">
+        <image bindtap="wxNavAction" data-src="{{item.product_list[1].navigator_url}}" class="size" style="width: {{item.product_list[1].image_width}}rpx;" src="{{item.product_list[1].image_src}}"></image>
+        <image bindtap="wxNavAction" data-src="{{item.product_list[2].navigator_url}}" class="size" style="width: {{item.product_list[2].image_width}}rpx;" src="{{item.product_list[2].image_src}}"></image>
+        <image bindtap="wxNavAction" data-src="{{item.product_list[3].navigator_url}}" class="size" style="width: {{item.product_list[3].image_width}}rpx;" src="{{item.product_list[3].image_src}}"></image>
+        <image bindtap="wxNavAction" data-src="{{item.product_list[4].navigator_url}}" class="size" style="width: {{item.product_list[4].image_width}}rpx;" src="{{item.product_list[4].image_src}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+<!--pages/my/my.wxml-->
+<view class="mycon">
+  <view class="head">
+    <view class="loging"></view>
+    <text>立即登入</text>
+  </view>
+  <view class="bottom">
+    <view class="numall conall">
+      <view class="numlist" wx:for="{{numlist}}" wx:key="name">
+        <view style="color: red;">{{item.num}}</view>
+        <view>{{item.name}}</view>
+      </view>
+    </view>
+    <view class="order">
+      <view class="ordertop conall">我的订单</view>
+      <view class="ordercon conall">
+        <block wx:for="{{orderimg}}" wx:key="name">
+          <view class="iconcon">
+            <view><image mode="widthFix" class="orderimg" src="{{item.url}}"></image></view>
+            <view>{{item.name}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="adm conall">收货地址管理</view>
+    <view class="">
+      <view class="adm conall" wx:for="{{btm}}" wx:key="*this">{{item}}</view>
+    </view>
+  </view>
+</view>

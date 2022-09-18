@@ -1,0 +1,56 @@
+/* pages/cate/cate.wxss */
+.hear-search {
+  background-color: #ccc;
+  height: 90rpx;
+  overflow: hidden;
+}
+.hear-btn {
+  background-color: #fff;
+  text-align: center;
+  height: 70rpx;
+  margin: 10rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #999;
+  border-radius: 20rpx;
+}
+.conmd {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+}
+.lrall{
+  height: 91vh;
+}
+.left {
+  width: 30vw;
+}
+.right {
+  width: 70vw;
+}
+.leftlist {
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.title {
+  text-align: center;
+  margin: 10rpx;
+}
+.right-imglist {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.img {
+  width: 140rpx;
+  height: 230rpx;
+  text-align: center;
+  font-size: small;
+  margin: 12rpx;
+}
+.active {
+  color: red;
+}

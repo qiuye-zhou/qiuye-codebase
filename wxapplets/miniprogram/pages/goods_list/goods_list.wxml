@@ -1,0 +1,24 @@
+<!--pages/goods_list/goods_list.wxml-->
+<view class="shoplist">
+  <view class="hear-search">
+    <view class="hear-btn">搜索</view>
+  </view>
+  <view class="conlist">
+    <view class="top">
+      <view bindtap="showl" data-index="{{index}}" class="topl {{acindex==index ? 'active' : ''}}" wx:for="{{topall}}" wx:key="this">{{item}}</view>
+    </view>
+    <view style="margin-top: 10rpx;">
+      <scroll-view scroll-y>
+        <view class="list">
+          <view bindtap="details" data-id="{{item.goods_id}}" class="listl" wx:for="{{shoplist.goods}}" wx:key="goods_id">
+            <image mode="widthFix" class="img" src="{{item.goods_big_logo}}"></image>
+            <view class="right">
+              <view class="title">{{item.goods_name}}</view>
+              <view class="price">¥{{item.goods_price}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

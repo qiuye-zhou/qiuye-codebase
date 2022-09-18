@@ -1,0 +1,60 @@
+/* pages/home/home.wxss */
+.hear-search {
+  background-color: #ccc;
+  height: 90rpx;
+  overflow: hidden;
+}
+.hear-btn {
+  background-color: #fff;
+  text-align: center;
+  height: 70rpx;
+  margin: 10rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #999;
+  border-radius: 20rpx;
+}
+swiper {
+  height: 340rpx;
+}
+.swoperimg {
+  width: 100vw;
+  height: 340rpx;
+}
+.backicon {
+  display: flex;
+  justify-content: space-around;
+  margin: 20rpx;
+}
+.icon {
+  width: 128rpx;
+  height: 140rpx;
+}
+.cont {
+  width: auto;
+}
+.conttop {
+  width: 100vw;
+  height: 59rpx;
+}
+.contflex {
+  display: flex;
+  justify-content: space-between;
+}
+.flexleft {
+  width: 232rpx;
+}
+.leftimg {
+  height: 100%;
+}
+.flexright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 480rpx;
+}
+.size {
+  height: 230rpx;
+  padding: 2rpx;
+}

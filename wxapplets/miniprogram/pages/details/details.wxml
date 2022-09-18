@@ -1,0 +1,35 @@
+<!--pages/details/details.wxml-->
+<view>
+  <view class="swipeli">
+    <swiper indicator-dots autoplay circular>
+      <block wx:for="{{details.pics}}" wx:key="pics_id">
+        <swiper-item>
+          <image class="img" mode="widthFix" src="{{item.pics_sma}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="con">
+    <view class="price">¥{{details.goods_price}}</view>
+    <view class="text">
+      <view class="left">{{details.goods_name}}</view>
+      <view class="right">
+        <image mode="widthFix" class="love" src="../../image/love.png"></image>
+        <view>收藏</view>
+      </view>
+    </view>
+  </view>
+  <view class="midcon">
+    <rich-text nodes="{{details.goods_introduce}}"></rich-text>
+  </view>
+  <view class="bottom">
+    <view class="lefticon">
+      <view wx:for="{{iconlist}}" wx:key="text" class="iconcon">
+        <image mode="widthFix" class="icon" src="{{item.url}}"></image>
+        <view>{{item.text}}</view>
+      </view>
+    </view>
+    <view class="shop all">加入购物车</view>
+    <view class="purc all">立即购买</view>
+  </view>
+</view>

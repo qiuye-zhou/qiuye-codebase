@@ -1,0 +1,78 @@
+/* pages/details/details.wxss */
+.img {
+  width: 100vw;
+  margin-top: -120rpx;
+  transform: scale(0.5);
+}
+swiper {
+  height: 500rpx;
+}
+.con {
+  width: 100vw;
+}
+.price {
+  color: red;
+  padding: 10rpx;
+  width: 100vw;
+  border-bottom: 2rpx solid black;
+}
+.text {
+  width: 100vw;
+  border-bottom: 2rpx solid black;
+  display: flex;
+}
+.left {
+  width: 80vw;
+  height: 100rpx;
+  font-size: small;
+  margin: 10rpx;
+  border-right: 2rpx solid black;
+}
+.right {
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+.love {
+  width: 50rpx;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 90rpx;
+  display: flex;
+  background-color: aliceblue;
+}
+.lefticon {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon {
+  width: 40rpx;
+}
+.iconcon {
+  font-size: x-small;
+}
+.all {
+  width: 25vw;
+  height: 90rpx;
+  color: aliceblue;
+  text-align: center;
+  line-height: 90rpx;
+  font-weight: 900;
+}
+.shop {
+  background-color: rgb(255, 147, 6);
+}
+.purc {
+  background-color: rgb(255, 75, 75);
+}
+.midcon {
+  width: 100vw;
+}

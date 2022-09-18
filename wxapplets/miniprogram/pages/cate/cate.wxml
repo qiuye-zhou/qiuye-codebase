@@ -1,0 +1,32 @@
+<!--pages/cate/cate.wxml-->
+<view class="content">
+  <view class="hear-search">
+    <view class="hear-btn">搜索</view>
+  </view>
+  <view class="conmd">
+    <view>
+      <scroll-view scroll-y>
+        <view class="left lrall">
+          <view class="leftlist {{index==active ? 'active' : ''}}" bindtap="tog" data-index="{{index}}" wx:for="{{leftlist}}" wx:key="cat_id">
+            {{item.cat_name}}
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view>
+      <scroll-view scroll-y scroll-anchoring enable-passive>
+        <view class="right lrall">
+          <view class="modul" wx:for="{{rightlist}}" wx:key="cat_id">
+            <view class="title">/{{item.cat_name}}/</view>
+            <view class="right-imglist">
+              <view class="img" bindtap="clicklist" data-name="{{item.cat_name}}" wx:for="{{item.children}}" wx:key="cat_id">
+                <image class="img" mode="widthFix" src="{{item.cat_icon}}"></image>
+                <view>{{item.cat_name}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

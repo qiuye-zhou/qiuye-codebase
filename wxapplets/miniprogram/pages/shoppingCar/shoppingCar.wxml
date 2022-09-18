@@ -1,0 +1,24 @@
+<!--pages/shoppingCar/shoppingCar.wxml-->
+<view class="shop">
+  <view class="hear-add">
+    <view class="add">+添加收货地址</view>
+  </view>
+  <view wx:if="{{shopplist.length==0}}" class="content">
+    <image class="shopnullimg" src="../../image/shoppnull.png"></image>
+    <button class="goshop" size="mini">去逛逛</button>
+  </view>
+  <view class="btton">
+    <label class="checkbox">
+      <checkbox value="all" />全选
+    </label>
+    <view class="right">
+      <view class="text">
+        <view>合计<text class="pricenum">¥{{price}}</text></view>
+        <view>包含运费</view>
+      </view>
+      <view class="result">
+        结算({{resultnum}})
+      </view>
+    </view>
+  </view>
+</view>

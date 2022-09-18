@@ -1,0 +1,62 @@
+/* pages/shoppingCar/shoppingCar.wxss */
+.hear-add {
+  background-color: #ccc;
+  height: 90rpx;
+  overflow: hidden;
+}
+.add {
+  background-color: #fff;
+  text-align: center;
+  height: 85rpx;
+  line-height: 85rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shopnullimg {
+  margin-top: 60rpx;
+  transform: scale(0.8);
+}
+.goshop {
+  background-color: red;
+  color: #fff;
+  border-radius: 30rpx;
+}
+.btton {
+  position: fixed;
+  bottom: 0rpx;
+  border: solid 2rpx rgb(117, 117, 117);
+  width: 100vw;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkbox {
+  margin-left: 10rpx;
+}
+.right {
+  display: flex;
+}
+.result {
+  background-color: rgb(235,68,80);
+  width: 180rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin-right: 10rpx;
+}
+.pricenum {
+  color: rgba(236,81,92);
+}
